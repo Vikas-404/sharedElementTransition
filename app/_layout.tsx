@@ -1,6 +1,8 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { Stack } from 'expo-router'
+import index from './index'
+import modal from './modal'
 
 const StackLayout = () => {
   return (

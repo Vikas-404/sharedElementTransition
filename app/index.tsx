@@ -8,7 +8,7 @@ const index = () => {
     return (
         <View style={styles.container}>
             <Text>Index.tsx</Text>
-            <Link href="modal" asChild>
+            <Link href="/modal" asChild>
                 <Pressable>
                     <Image source={{ uri: IMAGE }} style={styles.image}/>
                 </Pressable>
