@@ -3,15 +3,17 @@ import React from 'react';
 import { Link } from 'expo-router';
 import porsche from '../assets/porsche.jpg';
 const IMAGE = Image.resolveAssetSource(porsche).uri;
+import Animated, { SharedTransition } from 'react-native-reanimated';
 
 const index = () => {
     return (
         <View style={styles.container}>
             <Text>Index.tsx</Text>
-            <Link href="/modal" asChild>
+            <Link href="modal" asChild>
                 <Pressable>
-                    <Image source={{ uri: IMAGE }} style={styles.image}/>
+                    <Image source={{ uri: IMAGE }} style={styles.image} sharedTransitionTag="porsche-image" />
                 </Pressable>
+
             </Link>
         </View>
     )
@@ -19,7 +21,7 @@ const index = () => {
 
 const styles = StyleSheet.create({
     container: {
-        alignContent: 'center', 
+        alignContent: 'center',
         justifyContent: 'center',
         marginTop: 20,
     },
