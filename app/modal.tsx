@@ -2,14 +2,14 @@ import { View, Text, StyleSheet, Pressable } from 'react-native'
 import React from 'react'
 import { BlurView } from 'expo-blur'
 import { useRouter } from 'expo-router'
-// import Animated from 'react-native-reanimated'
+import Animated from 'react-native-reanimated'
 
 const modal = () => {
   const router = useRouter();
   return (
     <BlurView intensity={40} style={styles.container}>
       <Pressable onPress={() => router.back()}>
-        <Text> React Native Shared Element Transition </Text>
+        <Animated.Text> Hello </Animated.Text>
       </Pressable>
     </BlurView>
   )
