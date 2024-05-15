@@ -6,6 +6,7 @@ import Animated from 'react-native-reanimated'
 
 const modal = () => {
   const router = useRouter();
+  
   return (
     <BlurView intensity={40} style={styles.container}>
       <Pressable onPress={() => router.back()}>
