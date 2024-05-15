@@ -8,6 +8,9 @@
       "expo-router"
     ],
     "name": "sharedElementTransition",
-    "slug": "sharedElementTransition"
+    "slug": "sharedElementTransition",
+    "android": {
+      "package": "com.vikasassudani.sharedElementTransition"
+    }
   }
 }
