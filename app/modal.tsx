@@ -6,11 +6,11 @@ import Animated from 'react-native-reanimated'
 
 const modal = () => {
   const router = useRouter();
-  
+
   return (
     <BlurView intensity={40} style={styles.container}>
       <Pressable onPress={() => router.back()}>
-        <Animated.Text> Hello </Animated.Text>
+        <Animated.Text> React Native Shared Element Transition </Animated.Text>
       </Pressable>
     </BlurView>
   )
