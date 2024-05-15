@@ -10,7 +10,7 @@ const modal = () => {
   return (
     <BlurView intensity={40} style={styles.container}>
       <Pressable onPress={() => router.back()}>
-        <Animated.Text> React Native Shared Element Transition </Animated.Text>
+        <Animated.Text> React Native Shared Element Transition Before Prebuilding </Animated.Text>
       </Pressable>
     </BlurView>
   )
